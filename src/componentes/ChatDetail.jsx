@@ -2,6 +2,7 @@ import React, {useState, useRef, useEffect} from 'react'
 import Button from './Common/Button'
 import Message from './Message'
 import { messagesData } from '../data/whatsapp'
+import { messagesData1 } from '../data/whatsapp'
 import { MdSearch, MdSend } from 'react-icons/md'
 import { HiDotsVertical } from 'react-icons/hi'
 import { BiHappy } from 'react-icons/bi'
@@ -10,37 +11,8 @@ import { BsFillMicFill } from 'react-icons/bs'
 import { cs1, cs2 } from '../assets/whatsapp'
 import { getTime } from '../logic/whatsapp'
 import {chatsData} from '../data/whatsapp'
-/*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * This component renders a chat detail view
-   * 
-   * This component accepts no props
-   * 
-   * This component renders the following elements:
-   * - A contact nav with a profile picture, name, and time
-   * - A messages section with a list of messages
-   * - A bottom section with a input bar, emoji button, upload button, and a send button
-   * 
-   * This component uses the following state variables:
-   * - messages: an array of messages
-   * - typing: a boolean indicating if the user is typing
-   * 
-   * This component uses the following ref variables:
-   * - inputRef: a reference to the input bar
-   * - bottomRef: a reference to the bottom section
-   * 
-   * This component uses the following functions:
-   * - addMessage: a function to add a message to the messages array
-   * - handleInputMessage: a function to handle changes in the input bar
-   * - handleEmojiClick: a function to handle emoji button clicks
-   * - handleImgClick: a function to handle upload button clicks
-   * - handleInputSubmit: a function to handle submit button clicks
-   * 
-   * This component uses the following effects:
-   * - useEffect: to scroll to the bottom of the messages section when the messages array changes
-   * - useEffect: to add an event listener for enter key presses
-   */
-/******  b0beb3e9-6b80-4ddb-b813-0dddcae550e3  *******/function ChatDetail () {
+
+function ChatDetail () {
 
   const [messages, setMessages] = useState(messagesData);
   const [typing, setTyping] = useState(false);
@@ -49,7 +21,7 @@ import {chatsData} from '../data/whatsapp'
   const bottomRef = useRef(null);
 
 
-  //Fucntions
+  //Functions
 
   const addMessage = (msg) =>{
     const newMessages = [...messages, msg]
@@ -108,7 +80,7 @@ import {chatsData} from '../data/whatsapp'
       {/*Contact Nav*/}
         <div className='flex justify-between bg-[#202d33] h-[60px] p-3'>
           <div className='flex items-center'>
-              <img src={cs1} alt='profile-picture' className='rounded-full w-[45px] h-[45px] mr-5'/>
+              <img src={chatsData[0].pp} alt='profile-picture' className='rounded-full w-[45px] h-[45px] mr-5'/>
           
               <div className='flex flex-col'>
                   <h1 className='text-white font-medium'>{chatsData[0].contact}</h1>
@@ -125,20 +97,20 @@ import {chatsData} from '../data/whatsapp'
       {/*Messages Section*/}
       <div
         className="bg-[#0a131a] bg-[url('assets/images/bg.webp')] bg-contain overflow-y-scroll h-100"
-        style={{ padding: "12px 7%" }}
+        style={{ padding: "12px 2%" }}
       >
-    {messages.map((msg) =>(
-      <Message 
-        key={msg.id}
-        msg={msg.msg}
-        time={msg.time}
-        isLink={msg.isLink}
-        img={msg.img}
-        sent={msg.sent} 
-      />
-    ))}
-        <div ref={bottomRef}></div>
-        </div>
+        {messages.map((msg) =>(
+          <Message 
+            key={msg.id}
+            msg={msg.msg}
+            time={msg.time}
+            isLink={msg.isLink}
+            img={msg.img}
+            sent={msg.sent} 
+          />
+        ))}
+            <div ref={bottomRef}></div>
+            </div>
 
       {/*Bottom Section*/}
         <div className='flex items-center bg-[#202d33] w-100 h-[70px] p-2'>

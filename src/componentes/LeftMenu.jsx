@@ -23,7 +23,7 @@ function LeftMenu () {
         <img src={pp} alt="foto-de-perfil" className='rounder-full w-[40px]'/>
 
         {/** Profile nav buttons */}
-        <div className='flex justify-between w-[175px]'>
+        <div className='flex justify-between w-[175px] responsive'>
         <Button icon={<BsFillPeopleFill />}/>
         <Button icon={<TbCircleDashed />}/>
         <Button icon={<BsFillChatLeftTextFill />}/>
@@ -32,21 +32,21 @@ function LeftMenu () {
         </div>
       </div>
       {/*Search y filtros*/}
-      <div className='flex justify-between items-center h-[60px] p-2'>
+      <div className='flex justify-between items-center h-[60px] p-2 '>
       {/** Search */}
-      <input type='text' placeholder='Search or start a new chat'
-      className='rounded-lg bg-[#202d33] text-[#8796a1] text-sm font-light outline-none px-4 py-2 w-[400px] h-[35px] placeholder:text-color-[#8796a1] placeholder:text-sm placeholder:font-light'>
+        <input type='text' placeholder='Search or start a new chat '
+        className='responsive rounded-lg bg-[#202d33] text-[#8796a1] text-sm font-light outline-none px-4 py-2 w-100 max-w-[400px] h-[35px] placeholder:text-color-[#8796a1] placeholder:text-sm placeholder:font-light'>
 
-      </input>
-        {/** Filtros */}
-      <button className={`text-2xl m-2 p-1 rounded-full ${
-      filter 
-        ? "bg-emerald-500 text-white rounded-full hover:bg-emerald-700" 
-        : "text-[#8796a1] hover:bg-[#3c454c]"
-      }`}
-      onClick={() => setFilter(!filter)}>
-      <BiFilter />
-      </button>
+        </input>
+          {/** Filtros */}
+        <button className={`text-2xl m-2 p-1 rounded-full ${
+        filter 
+          ? "bg-emerald-500 text-white rounded-full hover:bg-emerald-700" 
+          : "text-[#8796a1] hover:bg-[#3c454c]"
+        }`}
+        onClick={() => setFilter(!filter)}>
+        <BiFilter />
+        </button>
 
       </div>
       {/*Chats*/}

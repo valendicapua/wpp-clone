@@ -38,12 +38,18 @@ a, a:hover, a:focus, a:active {
 
 /* Mobile 320px */
 /* Tablet 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     html{
-        font-size: 110%;
+        font-size: 90%;
     }
     .responsive{
-        width: 30px 
+        width: 0px;
+        display: none;
+    }
+    .leftmenu{
+        width: 30px !important;
+        text-align: center !important;
+        align-items: center !important;
     }
 }
 /* Desktop 1024px */

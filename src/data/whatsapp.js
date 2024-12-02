@@ -1,6 +1,6 @@
 import {
-    cs1,
-    cs2,
+    
+    chat9,
     chat1,
     chat2,
     chat3,
@@ -10,9 +10,9 @@ import {
   export const chatsData = [
     {
       id: 1,
-      pp: cs1,
+      pp: chat9,
       contact: "Mamá",
-      msg: "Awesome, thank you!",
+      msg: "Gracias hijo!",
       time: "1:15 pm",
       unreadMsgs: null,
       status: "online",
@@ -21,17 +21,17 @@ import {
       id: 2,
       pp: chat1,
       contact: "Federico",
-      msg: "Coding Spot is fire! 🔥",
+      msg: "Viste al perro?",
       time: "12:15 pm",
       unreadMsgs: 2,
-      status: "Last seen yesterday",
+      status: "Ultima vez hace 5 min",
 
     },
     {
       id: 3 ,
       pp: chat2,
       contact: "Carolina",
-      msg: "Miss you, call you later!",
+      msg: "Ahora si llamame!!",
       time: "11:11 am",
       unreadMsgs: 4,
       status: "online",
@@ -41,17 +41,17 @@ import {
       id: 4,
       pp: chat3,
       contact: "Papa",
-      msg: "Hey dad, need you asap!!",
+      msg: "Donde estas?",
       time: "11:04 am",
       unreadMsgs: null,
-      status: "Last seen 5 min ago",
+      status: "Online",
 
     },
     {
       id: 5,
       pp: chat4,
       contact: "+54 11 5561-1047",
-      msg: "Who are you???",
+      msg: "Quien sos???",
       time: "10:58 am",
       unreadMsgs: null,
       status: "online",
@@ -62,80 +62,84 @@ import {
   
   export const messagesData = [
     {
-      msg: "Hey wassupp bro!",
+      msg: "Holaaa",
       time: "10:58 am",
       sent: true,
     },
     {
-      msg: "This WhatsApp clone is firee 🔥",
+      msg: "Como estas???",
       time: "10:58 am",
       sent: true,
     },
     {
-      msg: "Keep it up! 👍👍👍",
+      msg: "Holaaa, todo bien y vos?",
       time: "10:59 am",
-      sent: true,
+      sent: false,
     },
     {
-      msg: "Thanks a lot! 😀",
+      msg: "Todo tranqui, gracias! 😀",
       time: "11:15 am",
       sent: false,
     },
     {
-      msg: "Make sure to follow all my socials! 👌👌",
+      msg: "mirate este video:",
       time: "11:15 am",
       sent: false,
     },
     {
-      msg: "I will! what's your Github?",
-      time: "11:28 am",
-      sent: true,
-    },
-    {
-      msg: "AlejoG10",
-      time: "11:36 am",
-      sent: false,
-    },
-    {
-      msg: "https://github.com/AlejoG10",
+      msg: " https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       isLink: true,
       time: "11:36 am",
       sent: false,
     },
     {
-      msg: "And your YouTube channel?",
+      msg: "jajaja temazoo",
+      time: "11:47 am",
+      sent: true,
+    },
+    {
+      msg: "Gracias hijo!",
       time: "11:47 am",
       sent: false,
     },
+    
+  ];
+  export const messagesData1 = [
     {
-      msg: "Coding Spot",
-      time: "11:55 am",
+      msg: "Holaaa",
+      time: "10:58 am",
+      sent: true,
+    },
+    {
+      msg: "Como estas???",
+      time: "10:58 am",
+      sent: true,
+    },
+    {
+      msg: "Holaaa, todo bien y vos?",
+      time: "10:59 am",
       sent: false,
     },
     {
-      msg: "https://www.youtube.com/channel/UCLqXQLK6zKZg0trhanjAkkQ",
+      msg: "Todo tranqui, gracias! 😀",
+      time: "11:15 am",
+      sent: false,
+    },
+    {
+      msg: "mirate este video: https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       isLink: true,
-      time: "11:55 am",
+      time: "11:36 am",
       sent: false,
     },
     {
-      img: cs2,
-      time: "11:56 am",
-      sent: false,
-    },
-    {
-      msg: "Niceeee channel! 🔥💯",
-      time: "12:35 pm",
+      msg: "jajaja temazoo",
+      time: "11:47 am",
       sent: true,
     },
     {
-      msg: "I will see all of your videos 😉",
-      time: "12:35 pm",
-      sent: true,
-    },
-    {
-      msg: "Awesome, thank for your support! 🙌",
-      time: "1:15 pm",
+      msg: "Gracias hijo!",
+      time: "11:47 am",
       sent: false,
     },
+    
   ];

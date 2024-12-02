@@ -17,18 +17,7 @@ function Chats({filter}) {
   return (
     //Main Container
     <div className='flex flex-col overflow-y-scroll cursor-pointer h-100'>
-    {/*Container Archivado/s*/}
-        <div className='flex justify-between items-center w-100 min-h-[55px] px-3 hover:bg-[#202d33]'>
-            
-            <div className='flex justify-around items-center w-[150px]'>
-                <span className='text-emerald-500 text-lg'>
-                    <ImFolderDownload />
-                </span>
-                <h1 className='text-white text-sm'>Archivados</h1>
-            </div>
-            {/** Cantidad de chats arhivados */}
-            <p className='text-emerald-500 text-xs font-light'>7</p>
-        </div>
+        
 
         {/*Chats map function*/}
         {chats.map((chat, i) => {
